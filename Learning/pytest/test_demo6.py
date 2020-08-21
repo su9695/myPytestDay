@@ -4,7 +4,7 @@ import pytest
 .在windows下想用多进程的选pytst-xdist； 想用多线程的选pytest-parallel
 xdist 不支持多线程  适合多目录结果下的用例一起执行
 xdist -n=X 进程数；
-parallel   '--workers=x','--tests-per-worker=y' x为进程数(windows下只能为1) y为线程数  
+parallel '--workers=x','--tests-per-worker=y' x为进程数(windows下只能为1) y为线程数  
 
 conftest.py
 │  __init__.py
