@@ -1,4 +1,7 @@
 import pytest
+'''
+不同层级的conftest 文件，作用域也不同
+'''
 @pytest.fixture(scope='module',autouse=True) # autouse 自动调用该fixture
 def  moudleFixture():
     print('\n----hello everyone-----')
