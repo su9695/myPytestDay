@@ -38,3 +38,10 @@ def addFinalizerFixture1(request):
     request.addfinalizer(afterFinalizerFixture2)
     request.addfinalizer(afterFinalizerFixture3)
 
+
+@pytest.fixture(scope='module')
+def getInfo(request):
+    info=request.param
+    print('\nconftest获取的数据%s'%info)
+    return info
+
