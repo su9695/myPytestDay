@@ -20,4 +20,5 @@ class TestDemo7(object):
         
 if __name__ == "__main__":
    pytest.main(['-s',__file__,'--html=Learning/pytest/report/report.html','--self-contained-html'])
+   # 上面方法生成的报告，css是独立的，分享报告的时候样式会丢失，为了更好的分享发邮件展示报告，可以把css样式合并到html里
 

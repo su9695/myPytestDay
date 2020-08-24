@@ -9,7 +9,7 @@ session：多个文件调用一次，可以跨文件，如在.py文件中，每�
 范围：
 session > module > class > function
 2、fixture的自动应用autouse
-3、conftest中定义多个fixture，一个fixture可以是另一个fixture的前后置，期间还是用field隔开前后置
+3、conftest中定义多个fixture，一个fixture可以是另一个fixture的前后置，期间还是用yield隔开前后置
 执行顺序为 前fixture yield之前的代码——引用前fixture的fixture yield之前的代码--用例代码--引用前fixture的fixture yield之后的代码---前fixture yield之后的代码
 4、fixture 中的yield 前置和后置 可以用于登录，数据库连接等
 5、addfinalizer 也可以起到yield相同的作用：但addfinalizer可以注册使用多次
